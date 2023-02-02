@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Solitreo&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+  </head>
+  <body>
+    <div id="content">
+      <div class="header">
+        <h3 class="header-title"><i class="material-symbols-outlined">task_alt</i>To Do List</h3>
+        
+      </div>
+      <div class="sidebar">
+        <h3><i class="fa-solid fa-list-check"></i> My Tasks</h3>
+        <h3><i class="fa-solid fa-list-check"></i> My Projects</h3>
+        <form class="form1" method="post" action="#">
+          <input type="text" name="project" id="project" placeholder="Write your project">
+          <input type="submit" id="submit" value="Add">
+        </form>
+        <div class="projectsList">
+          <ul class="projectList">
+            
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="task-container">
+          <h2 class="container-project-name"></h2>
+          <div class="popup">
+            <div class="formPopup">
+              <form class="pop-up-form" action="#">
+                <input type="text" name="new-task-name" id="new-task-name" required>
+                <input type="text" name="new-task-description" id="new-task-description" required>
+                <input type="date" name="new-task-date" id="new-task-date" required>
+                <input type="submit" class="new-submit" id="new-submit" value="Edit">
+                <button type="button" class="pop-up-cancel">Close</button>
+              </form>
+            </div>
+          </div>
+          
+          <form class="taskForm" method="post" action="#" style="display: none">
+            <input type="text" name="task-name" id="task-name" placeholder="Name">
+            <input type="text" name="task-description" id="task-description" placeholder="Description">
+            <input type="date" name="task-date" id="task-date">
+            <input type="submit" id="submit" value="Add">
+          </form>
+          <div class="displayTasks">
+            
+          </div>
+
+        </div>
+        
+      </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

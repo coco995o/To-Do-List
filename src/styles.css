@@ -1,0 +1,126 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 19% 81%;
+    
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #5F9DF7;
+    font-family: Solitreo;
+}
+.header h3{
+    font-size: 30px;
+    padding-left: 3%;
+}
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:#6ECCAF;
+    height: calc(100vh - 103px);
+    text-align: left;
+    padding-left: 5%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    color: #3C4048;
+}
+.container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: calc(100vh - 103px);
+    font-family: 'Roboto';
+}
+.task-container{
+    text-align: center;
+}
+.task-container h2{
+    font-size: 40px;
+}
+.selected{
+    /* background: lightgreen; */
+    color: #FFEA20;
+}
+.displayTasks{
+    display: grid;
+    justify-content: center;
+    padding: 2%;
+}
+
+/* form */
+
+.formPopup{
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5px;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+    border-radius: 5%;
+
+}
+.pop-up-form {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+}
+.pop-up-form  input[type=text],
+.pop-up-form  input[type=text],
+.pop-up-form  input[type=date] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+.pop-up-form .new-submit .pop-up-cancel {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .pop-up-form .pop-up-cancel {
+    background-color: #cc0000;
+    color: white;
+  }
+  .popup{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.table{
+    border-spacing: 10px;
+    width: 520px;
+    border-bottom: 2px solid black;
+}
+/* .priorityDiv{
+    width: 10px;
+    height: 100%;
+} */
+.table:hover{
+    background-color: #DDDDDD;
+}
+tr td:last-child{
+    width: 10px;
+    height: 100%;
+}
+table {
+    table-layout: fixed;
+}
